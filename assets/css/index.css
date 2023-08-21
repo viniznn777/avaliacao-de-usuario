@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarala&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1b1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: rgb(252, 172, 0);
+  padding-bottom: 3px;
+  font-family: "Sarala", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+form {
+  margin-top: 22px;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+}
+.container-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+label {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-family: "Sarala", sans-serif;
+  color: #e0dbdb;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: transparent;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+input:focus {
+  border: 2px solid rgb(252, 172, 0);
+}
+
+/* ========================================= */
+
+/* Para alguns Navegadores */
+
+input[type="range"] {
+  height: 32px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background-color: #b6b6b6;
+  border-radius: 25px;
+  border: 1px solid #8a8a8a;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #d8a705;
+  border: 1px solid #d38003;
+  height: 24px;
+  width: 35px;
+  border-radius: 6px;
+  background: rgb(252, 172, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #b6b6b6;
+}
+
+/* ========================================= */
+
+textarea {
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  padding: 12px;
+  font-family: "Sarala", sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 100%;
+  color: #ffffff;
+}
+textarea:focus {
+  border: 2px solid rgb(252, 172, 0);
+}
+
+.submit {
+  margin-top: 12px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgb(252, 172, 0);
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Sarala", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+.submit:hover {
+  background-color: rgb(250, 214, 56);
+  letter-spacing: 0.5px;
+}
+
+.labelRating {
+  font-family: "Sarala", sans-serif;
+  font-size: 1.4rem;
+  padding-top: 32px;
+}
+
+.edit {
+  padding: 12px;
+  color: #ffffff;
+  font-family: "Sarala", sans-serif;
+}
+.edit:hover {
+  color: rgb(252, 172, 0);
+}

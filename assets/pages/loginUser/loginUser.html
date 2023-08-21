@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ver minha Avaliação</title>
+    <link
+      rel="shortcut icon"
+      href="../../media/rating.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off">
+        <h1>Ver Avaliação 🔍</h1>
+        <label for="username">Usuário:</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Digite o nome de usuário que você criou anteriormente!"
+        />
+        <button id="search">Pesquisar</button>
+      </form>
+      <p class="info" id="info">Informações aparecerão aqui</p>
+      <div class="container-info">
+        <span>Usuário:</span>
+        <p class="username" id="usernameInfo"></p>
+        <span>Nota:</span>
+        <p class="rating" id="rating"></p>
+        <span>Sugestão:</span>
+        <p class="suggestion" id="suggestion"></p>
+        <span>Data:</span>
+        <p class="date" id="date"></p>
+        <p class="button-edit">
+          <a href="../editRating/editSuggestion.html" class="button-edit"
+            >Editar minha avaliação</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="../../javascript/loginUser.js"></script>
+  </body>
+</html>

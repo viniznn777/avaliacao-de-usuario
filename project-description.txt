@@ -1,0 +1,49 @@
+Descrição do Projeto - Sistema de Avaliação de Usuário
+
+Este projeto consiste em uma API de avaliação de usuários, juntamente com uma página web que permite aos usuários inserir suas avaliações, visualizá-las, editar e, se necessário, reenviar os dados para a API. O objetivo principal é coletar feedbacks e sugestões dos usuários para melhorar a experiência do site.
+
+Funcionalidades do Projeto:
+
+Avaliação do Usuário:
+
+O usuário pode inserir uma avaliação fornecendo seu nome de usuário, email, nota para o site e sugestão.
+Todos os campos são obrigatórios, e caso algum deles não seja preenchido, o sistema exibirá uma mensagem de alerta para o usuário informando que os campos não podem ficar vazios.
+Após preencher corretamente os campos e clicar no botão "Enviar", os dados são enviados para a API de avaliação.
+Se o envio for bem-sucedido, o usuário será redirecionado para uma página de sucesso; caso contrário, será redirecionado para uma página de erro de envio.
+
+
+Visualização da Avaliação:
+
+Na página de sucesso, o usuário encontrará um botão chamado "Ver Avaliação".
+Ao clicar nesse botão, o usuário será redirecionado para uma página onde poderá pesquisar sua avaliação usando o nome de usuário fornecido anteriormente.
+Se o usuário não for encontrado na API, uma mensagem de erro será exibida informando que o usuário não foi encontrado.
+Caso contrário, as informações da avaliação, incluindo nome de usuário, nota e sugestão, serão exibidas.
+Para maior segurança, o email cadastrado não é mostrado nas informações, pois somente com o nome de usuário e o email em CONJUNTO, é possível alterar as informações da avaliação.
+
+
+Edição da Avaliação:
+
+Ao visualizar sua avaliação, o usuário encontrará um botão "Editar Avaliação".
+Clicando nesse botão, o usuário será redirecionado para uma página de edição, onde poderá editar a nota e sugestão.
+O nome de usuário e o email cadastrado será solicitado novamente para verificar se o usuário existe na API.
+Se o usuário não for encontrado, uma mensagem de erro será exibida; caso contrário, o usuário poderá editar a avaliação.
+Para enviar a edição, todos os campos de nota e sugestão devem ser preenchidos corretamente; caso contrário, o envio não será concluído e os campos não preenchidos serão destacados.
+Após o envio bem-sucedido da edição, o nome de usuário e email será limpo, e o usuário verá um botão "Login" para retornar à página de visualização da avaliação e confirmar se as alterações foram aplicadas com sucesso.
+
+
+Tecnologias Utilizadas:
+
+JavaScript para a lógica do frontend e manipulação da API.
+HTML e CSS para a criação e estilização das páginas.
+API de avaliação de usuário para armazenar e recuperar as avaliações.
+Fetch API para realizar as requisições HTTP para a API.
+Tratamento de erros para fornecer feedback ao usuário em caso de problemas de envio ou busca.
+
+
+Considerações Finais:
+
+Este projeto foi desenvolvido com o objetivo de coletar feedbacks e sugestões dos usuários para melhorar a qualidade do site. A funcionalidade de edição permite que os usuários atualizem suas avaliações caso desejem fornecer mais informações ou corrigir detalhes.
+
+Esperamos que este sistema de avaliação seja útil para melhorar a experiência do usuário e proporcionar um ambiente de interação e feedback construtivo para os visitantes do site.
+
+Sinta-se à vontade para utilizar e modificar este projeto conforme suas necessidades e requisitos específicos.

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarala&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hide-container {
+  display: none;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 100%;
+  margin-bottom: 12px;
+}
+
+h1 {
+  color: rgb(252, 172, 0);
+  padding-top: 15px;
+  margin-top: 15px;
+  font-family: "Sarala", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+#linkButton {
+  text-decoration: none;
+  display: none;
+  text-align: center;
+  background-color: rgb(252, 172, 0);
+  font-family: "Sarala", sans-serif;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.05rem;
+}
+
+#linkButton:hover {
+  background-color: rgb(250, 214, 56);
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: #1b1b1c; /* Define a cor de fundo para o modo escuro */
+  color: #ffffff; /* Define a cor do texto para branco */
+  font-family: Arial, sans-serif; /* Define a fonte do texto */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Primeiro Formulário */
+form.fform {
+  padding: 20px;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid white;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+label {
+  font-family: "Sarala", sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: transparent;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+input:focus {
+  border: 2px solid rgb(252, 172, 0);
+}
+/* Segundo Formulário */
+form.sform {
+  padding: 20px;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid white;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+input[type="range"] {
+  height: 32px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background-color: #b6b6b6;
+  border-radius: 25px;
+  border: 1px solid #8a8a8a;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #d8a705;
+  border: 1px solid #d38003;
+  height: 24px;
+  width: 35px;
+  border-radius: 6px;
+  background: rgb(252, 172, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #b6b6b6;
+}
+
+textarea {
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  padding: 12px;
+  font-family: "Sarala", sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 100%;
+  color: #ffffff;
+}
+textarea:focus {
+  border: 2px solid rgb(252, 172, 0);
+}
+
+/* Estilo para o botão de busca */
+#buttonSearch,
+#sendButton {
+  background-color: rgb(252, 172, 0);
+  font-family: "Sarala", sans-serif;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+#buttonSearch:hover,
+#sendButton:hover {
+  background-color: rgb(250, 214, 56);
+  letter-spacing: 0.5px;
+}
+
+/* Estilo para o log de texto */
+#textLog {
+  margin-top: 10px;
+  font-family: "Sarala", sans-serif;
+}
+
+/* Estilo para o contêiner que será escondido */
+#hideContainer {
+  display: none;
+}
+
+/* Estilos para tornar a página responsiva */
+@media only screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}

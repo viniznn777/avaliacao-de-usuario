@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarala&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  color: rgb(252, 172, 0);
+  padding-top: 15px;
+  margin-top: 15px;
+  font-family: "Sarala", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+#linkButton {
+  text-decoration: none;
+  display: none;
+  text-align: center;
+  background-color: rgb(252, 172, 0);
+  font-family: "Sarala", sans-serif;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.05rem;
+  border-radius: 5px;
+}
+
+#linkButton:hover {
+  background-color: rgb(250, 214, 56);
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: #1b1b1c; /* Define a cor de fundo para o modo escuro */
+  color: #ffffff; /* Define a cor do texto para branco */
+  font-family: Arial, sans-serif; /* Define a fonte do texto */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Primeiro Formulário */
+form.fform {
+  padding: 20px;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid white;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+label {
+  font-family: "Sarala", sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  outline: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: transparent;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+input:focus {
+  border: 2px solid rgb(252, 172, 0);
+}
+
+#buttonSearch, #buttonRemove
+ {
+  background-color: rgb(252, 172, 0);
+  font-family: "Sarala", sans-serif;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+#buttonSearch:hover, #buttonRemove:hover
+{
+  background-color: rgb(250, 214, 56);
+  letter-spacing: 0.5px;
+}
+
+/* Estilos para tornar a página responsiva */
+@media only screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+#buttonRemove {
+  display: none;
+}

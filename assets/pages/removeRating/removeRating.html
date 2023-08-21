@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/remove-rating.css">
+    <link rel="shortcut icon" href="../../media/rating.png" type="image/x-icon">
+    <title>Remover Avaliação</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Remover Avaliação ❌</h1>
+        <form class="fform" autocomplete="off">
+        <label for="username"> Usuário: </label>
+        <input
+            type="text"
+            name="username"
+            id="username"
+            class="username"
+            placeholder="Nome de usuário"
+        />
+        <label for="email">E-mail:</label>
+        <input
+            type="text"
+            name="email"
+            id="email"
+            class="email"
+            placeholder="Email cadastrado"
+        />
+        <button id="buttonSearch" class="button-search">Procurar usuário</button>
+        <button id="buttonRemove" class="button-remove">Remover</button>
+        <p class="text-log" id="textLog"></p>
+        <p class="text-log2" id="textLog2"></p>
+        <a href="../../pages/loginUser/loginUser.html" id="linkButton">Login</a>
+        </form>
+    </div>
+    <script src="../../javascript/removeSuggestion.js"></script>
+</body>
+</html>

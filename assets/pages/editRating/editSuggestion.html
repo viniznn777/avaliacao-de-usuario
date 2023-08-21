@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Avaliação</title>
+    <link
+      rel="shortcut icon"
+      href="../../media/rating.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/edit-suggestion-page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Editar Avaliação 📌</h1>
+      <form class="fform" autocomplete="off">
+        <label for="username"> Usuário: </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          class="username"
+          placeholder="Nome de usuário"
+        />
+        <label for="email">E-mail:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="email"
+          placeholder="Email cadastrado"
+        />
+        <button id="buttonSearch" class="button-search">Pesquisar</button>
+        <p class="text-log" id="textLog"></p>
+        <a href="../../pages/loginUser/loginUser.html" id="linkButton">Login</a>
+      </form>
+      <div class="hide-container" id="hideContainer">
+        <form class="sform">
+          <label for="rating" id="labelRating" class="labelRating"></label>
+          <input
+            type="range"
+            name="rating"
+            id="rating"
+            max="10"
+            min="1"
+            step="0.5"
+            required
+          />
+          <label for="suggestion">Sugestão </label>
+          <textarea
+            name="suggestion"
+            id="suggestion"
+            cols="30"
+            rows="10"
+            placeholder="Editar Sugestão"
+            required
+          ></textarea>
+          <button class="send" id="sendButton">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <script src="../../javascript/labelRating.js"></script>
+    <script src="../../javascript/editSuggestion.js"></script>
+  </body>
+</html>

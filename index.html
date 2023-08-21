@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API de Avaliação | v1.0.0</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/media/rating.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <form action="javascript:void(0)" autocomplete="off">
+      <h1>
+        Avalie-nos
+        <img
+          src="./assets/media/five-stars.png"
+          alt="stars"
+          draggable="false"
+        />
+      </h1>
+      <div class="container-input">
+        <label for="name">Nome de Usuário:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="inputName"
+          required
+          placeholder="Digite um nome de usuário"
+        />
+      </div>
+      <div class="container-input">
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="inputEmail"
+          required
+          placeholder="Digite seu email"
+        />
+      </div>
+      <div class="container-input">
+        <label for="rating" id="labelRating" class="labelRating"></label>
+        <input
+          type="range"
+          name="rating"
+          id="rating"
+          max="10"
+          min="1"
+          step="0.5"
+          class="inputRating"
+          required
+        />
+      </div>
+      <div class="container-input">
+        <label for="suggestion">Sugestão:</label>
+        <textarea
+          name="suggestion"
+          id="suggestion"
+          cols="30"
+          rows="8"
+          class="suggestion"
+          required
+          placeholder="Tem alguma sugestão? "
+        ></textarea>
+      </div>
+      <button class="submit" id="submit">AVALIAR</button>
+      <a
+        class="submit"
+        id="submit"
+        href="./assets/pages/loginUser/loginUser.html"
+        >VER AVALIAÇÃO EXISTENTE</a
+      >
+      <a
+        class="submit"
+        id="submit"
+        href="./assets/pages/removeRating/removeRating.html"
+        >REMOVER AVALIAÇÃO EXISTENTE</a
+      >
+      <a
+        class="edit"
+        href="./assets/pages/editRating/editSuggestion.html"
+        id="submit"
+        >EDITAR AVALIAÇÃO EXISTENTE</a
+      >
+    </form>
+
+    <script src="./assets/javascript/labelRating.js"></script>
+    <script src="./assets/javascript/sentReview.js"></script>
+  </body>
+</html>

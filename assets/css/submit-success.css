@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarala&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1b1c;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+img {
+  width: 20%;
+  height: 50%;
+}
+
+p.text {
+  font-weight: bold;
+  font-family: "Sarala", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+#button {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Sarala", Arial, Helvetica, sans-serif;
+  padding: 15px;
+  color: #000000;
+  background-color: rgb(252, 172, 0);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

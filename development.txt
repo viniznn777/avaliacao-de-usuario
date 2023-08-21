@@ -1,0 +1,46 @@
+Descrição do Projeto - Site de Avaliação Conectado a API
+
+Este projeto consiste no desenvolvimento de um site de avaliação que está conectado a uma API online. O objetivo é permitir que os usuários insiram suas avaliações, visualizem as avaliações existentes e também tenham a opção de atualizar suas próprias avaliações usando um nickname exclusivo.
+
+Passo a Passo do Desenvolvimento:
+
+Step 1 - Criar um ambiente de envio de solicitação ✅
+
+Nessa etapa, foi implementado um formulário de envio de solicitação no site.
+O usuário pode preencher os campos obrigatórios, incluindo seu nickname exclusivo, a avaliação (nota), sugestões e outras informações relevantes.
+Ao clicar no botão "Enviar", os dados da avaliação são enviados para a API online através de uma solicitação HTTP.
+Caso algum campo obrigatório esteja vazio, o sistema exibirá uma mensagem de alerta para informar ao usuário que os campos não podem ficar vazios.
+
+
+Step 2 - Criar um ambiente de solicitação de informações ✅
+
+Nesta etapa, foi criado um ambiente para que os usuários possam pesquisar informações de avaliações existentes.
+O usuário pode inserir seu nickname exclusivo no campo de pesquisa e, ao clicar no botão "Pesquisar", o sistema realizará uma solicitação à API online para buscar as informações associadas ao nickname fornecido.
+Para maior segurança, o email cadastrado não é mostrado nas informações, pois somente com o nome de usuário e o email em CONJUNTO, é possível alterar as informações da avaliação.
+Se o nickname e o email não for encontrado na API, o sistema exibirá uma mensagem de erro informando ao usuário que o nickname não está associado a nenhuma avaliação.
+
+
+Step 3 - Criar um ambiente de modificação de avaliação ✅
+
+Nesta etapa, foi criado um ambiente para que os usuários possam atualizar suas avaliações existentes.
+O usuário poderá editar sua avaliação anterior, incluindo a nota e as sugestões fornecidas anteriormente.
+Para garantir a segurança do sistema, o usuário será solicitado a inserir novamente o nickname exclusivo e o email cadastrado anteriormente para verificar sua identidade.
+Caso o nickname e o email não seja encontrado na API, o sistema exibirá uma mensagem de erro informando ao usuário que o nickname não está associado a nenhuma avaliação.
+Todos os campos de edição (nota e sugestões) devem ser preenchidos corretamente para que a atualização da avaliação seja concluída com sucesso. Caso contrário, os campos não preenchidos serão destacados.
+
+
+Tecnologias Utilizadas:
+
+HTML, CSS e JavaScript para a criação do site e a manipulação dos dados.
+API online para armazenar as avaliações dos usuários.
+Fetch API para realizar as solicitações HTTP para a API online.
+Tratamento de erros para fornecer feedback ao usuário em caso de problemas durante as solicitações.
+
+
+Considerações Finais:
+
+Este projeto permite que os usuários forneçam suas avaliações de forma fácil e interativa. O uso do nickname exclusivo garante a privacidade e evita que os usuários acessem avaliações de outros usuários.
+
+Esperamos que este site de avaliação seja útil para coletar feedbacks valiosos dos usuários e proporcionar uma experiência aprimorada no site. A possibilidade de atualizar avaliações permite que os usuários possam fornecer mais informações ou corrigir detalhes caso necessário.
+
+Fique à vontade para personalizar e modificar este projeto de acordo com suas necessidades específicas.
