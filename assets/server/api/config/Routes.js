@@ -47,7 +47,7 @@ routes.get("/edit/:username/:email", (request, response) => {
 
 // Requisiçao post onde é adicionado as informaçoes de um usuário
 routes.post("/users", (request, response) => {
-  const { username, email, rating, suggestion } = request.body;
+  const { username, email, rating, suggestion, avatar } = request.body;
 
   // Verificar se há duplicatas, caso houver será retornado o valor 1, caso contrário será -1
   const VERIFY_DUPLICATE = DB_RATING_USERS.USERS.findIndex(
@@ -63,9 +63,17 @@ routes.post("/users", (request, response) => {
       id: "",
       rating,
       suggestion,
+      avatar,
       date: `${FGETDAY}`,
     };
-    const user = { username, id: "", rating, suggestion, date: `${FGETDAY}` };
+    const user = {
+      username,
+      id: "",
+      rating,
+      suggestion,
+      avatar,
+      date: `${FGETDAY}`,
+    };
     DB_RATING_USERS.USERS.push(user);
     DB_PRIVATE_INFO_USER.USERS.push(userPrivate);
     userPrivate.id = DB_PRIVATE_INFO_USER.USERS.length;
@@ -99,16 +107,18 @@ routes.put("/users/:username/rating", (request, response) => {
   }
 });
 
-routes.delete('/users/remove_rating/:username/:email', (request, response) => {
+routes.delete("/users/remove_rating/:username/:email", (request, response) => {
   const { username, email } = request.params;
 
   const indexToRemove = DB_PRIVATE_INFO_USER.USERS.findIndex((user) => {
-    return user.username === username && user.email === email
-  })
+    return user.username === username && user.email === email;
+  });
   if (indexToRemove !== -1) {
-    DB_PRIVATE_INFO_USER.USERS.splice(indexToRemove, 1)
-    DB_RATING_USERS.USERS.splice(indexToRemove, 1)
-    response.status(200).json({ message: 'Avaliação removida com sucesso!.' })
-  }else {response.status(404).send('Usuário não encontrado')}
-})
+    DB_PRIVATE_INFO_USER.USERS.splice(indexToRemove, 1);
+    DB_RATING_USERS.USERS.splice(indexToRemove, 1);
+    response.status(200).json({ message: "Avaliação removida com sucesso!." });
+  } else {
+    response.status(404).send("Usuário não encontrado");
+  }
+});
 module.exports = routes;

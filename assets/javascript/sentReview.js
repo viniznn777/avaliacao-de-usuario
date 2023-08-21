@@ -21,11 +21,14 @@ submitI.addEventListener("click", (e) => {
   }
 
   // Criando um objeto com os dados do formulário
+  let avatarUrl = `https://api.dicebear.com/6.x/initials/svg?seed=${usernameI.value}`;
+  let encodedURL = encodeURI(avatarUrl);
   let data = {
     username: usernameI.value,
     email: emailI.value,
     rating: ratingI.value,
     suggestion: suggestionI.value,
+    avatar: encodedURL,
   };
 
   // Realizando uma requisição fetch para a URL da API
