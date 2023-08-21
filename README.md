@@ -48,3 +48,6 @@ Remoção de Avaliação:
 Considerações Finais:
 
 🌟 Este projeto busca coletar feedbacks e sugestões dos usuários para aprimorar o site. A funcionalidade de edição permite atualizações das avaliações, fortalecendo o engajamento e interação dos usuários.
+
+
+#Fique a vontade para enviar sugestões para implementar na api ou no Front-end
